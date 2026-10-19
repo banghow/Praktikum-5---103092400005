@@ -1,0 +1,35 @@
+1.	Pengertian Bootstrap [10 poin] Jelaskan apa itu Bootstrap dan apa kegunaannya! 
+Jawaban: Bootstrap adalah sebuah framework CSS yang open source dan gratis, yang dibuat oleh tim developer dari Twitter. Jadi intinya, Bootstrap ini gunanya buat mempermudah kita dalam membuat tampilan website supaya lebih rapi, bagus, dan responsif tanpa harus nulis CSS dari nol.
+
+Kegunaannya itu misalnya kita bisa langsung pakai class class yang sudah disediakan buat bikin tombol, navbar, card, form, dan lain lain. Jadi kita nggak perlu repot styling satu per satu. Selain itu, Bootstrap juga bikin website kita otomatis responsif, artinya tampilannya bisa menyesuaikan di HP, tablet, maupun laptop.
+
+2.	Memasang Bootstrap [10 poin] Ada beberapa cara untuk mengimpor atau menggunakan Bootstrap pada project. Sebutkan caracaranya! 
+Jawab: Ada beberapa cara buat memasang atau menggunakan Bootstrap di project kita:
+•	Pakai CDN (Content Delivery Network) Ini cara paling gampang, tinggal copy paste link CSS dan JS Bootstrap dari website resminya ke dalam tag <head> dan sebelum </body> di file HTML kita. Jadi tidak perlu download apapun.
+•	Download langsung dari website resmi, kita bisa download file Bootstrap dari getbootstrap.com, terus file CSS dan JS nya kita taruh di folder project kita, lalu kita panggil lewat tag <link> dan <script>.
+•	Install lewat npm (Node Package Manager), jika projectnya pakai Node.js, bisa install Bootstrap pakai perintah npm install bootstrap di terminal.
+•	Install lewat yarn, mirip dengan npm, tapi pakai perintah yarn add bootstrap
+
+3.	Grid dan Breakpoint [10 poin] Jelaskan mengenai class grid dan kegunaan breakpoint! 
+Jawab: Grid di Bootstrap adalah sistem layout yang membagi halaman menjadi 12 kolom. Jadi kita bisa mengatur posisi dan lebar elemen di halaman pakai class seperti col 6 (setengah halaman), col 4 (sepertiga halaman), dan seterusnya. Grid ini biasanya dibungkus dalam container dan row. Breakpoint itu adalah titik titik ukuran layar tertentu yang dipakai Bootstrap buat menentukan kapan layout harus berubah. Breakpoint yang ada di Bootstrap antara lain:
+•	xs, untuk layar extra small (< 576px), seperti HP kecil
+•	sm, small (≥ 576px)
+•	md, medium (≥ 768px), seperti tablet
+•	lg, large (≥ 992px), contoh laptop
+•	xl, extra large (≥ 1200px), seperti monitor besar
+•	xxl, extra extra large (≥ 1400px)
+Jadi misalnya kita pakai class col md 6, artinya elemen itu lebarnya setengah halaman kalau layarnya ukuran medium ke atas, tapi kalau layarnya lebih kecil dari itu, dia bakal jadi full width.
+
+
+4.	Class Bootstrap [10 poin] Sebutkan minimal lima class yang disediakan oleh Bootstrap beserta kegunaannya! 
+Jawab: 
+1.	container, digunakan untuk membungkus konten halaman supaya ada margin otomatis di kiri dan kanan, jadi kontennya ada di tengah dan tidak nabrak pinggir layar.
+2.	btn btn-primary, digunakan untuk membuat tombol dengan warna biru (primary). Selain primary ada juga btn-success, btn-danger, btn-warning dll.
+3.	navbar, digunakan untuk membuat navigation bar atau menu navigasi di bagian atas website. Biasanya dipake bareng sama navbar-expand-lg dan navbar-dark atau navbar-light.
+4.	card, digunakan untuk membuat kotak konten yang rapi dengan border dan padding. Biasanya dipake buat menampilkan informasi produk, artikel, atau profil.
+5.	d-flex, digunakan untuk mengaktifkan flexbox pada sebuah elemen, jadi kita bisa mengatur tata letak anak-anak elemennya secara fleksibel, misalnya ditambah justify-content-center buat rata tengah.
+6.	mt-3 / mb-3 / p-3, ini class untuk spacing. mt-3 artinya margin-top sebesar level 3, mb-3 margin-bottom, dan p-3 itu padding semua sisi. Jadi nggak perlu nulis css manual buat kasih jarak.
+
+5.	Gambar Responsif [10 poin] Bagaimana cara agar foto atau gambar pada website responsif menyesuaikan ukuran layar perangkat?
+Jawab: Cara supaya gambar di website responsif menyesuaikan ukuran layar perangkat itu gampang banget di Bootstrap, tinggal tambahin class img-fluid pada tag <img>. Contohnya:
+<img src="foto.jpg" class="img-fluid" alt="Foto Responsif">
